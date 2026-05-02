@@ -1,0 +1,102 @@
+#transactions-preview {
+    width: 100%;
+    padding: 32px 24px;
+    overflow: scroll;
+}
+
+#transactions-preview::-webkit-scrollbar {
+    width: 8px;
+    height: 100%;
+}
+
+#transactions-preview::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 4px;
+}
+
+#transactions-preview::-webkit-scrollbar-thumb:hover {
+    background: #aaa;
+}
+
+.transaction-card {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 16px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.icon-details-container {
+    display: flex;
+    gap: 10px;
+}
+
+
+.transaction-details {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.transaction-details p {
+    color: #242424;
+    opacity: 0.7;
+}
+
+.transaction-amount {
+    display: flex;
+    align-items: center;
+    color: #3FBF73;
+}
+
+.icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1000px;
+    min-width: 40px;
+    min-height: 40px;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+}
+
+
+.transaction-card.transfer .icon-container {
+    border: 1px solid #54BCF1;
+}
+
+.transaction-card.payment .icon-container {
+    border: 1px solid #FFA15E;
+}
+
+.transaction-card.income .icon-container {
+    border: 1px solid #3FBF73;
+}
+
+.transaction-card.withdrawal .icon-container {
+    border: 1px solid #FF5C5C;
+}
+
+.transaction-card.transfer .transaction-amount {
+    color: #54BCF1;
+}
+
+.transaction-card.payment .transaction-amount {
+    color: #FFA15E;
+}
+
+.transaction-card.income .transaction-amount {
+    color: #3FBF73;
+}
+
+.transaction-card.withdrawal .transaction-amount {
+    color: #FF5C5C;
+}
+
+
+
+#transaction-icon {
+    width: 24px;
+    height: 24px;
+}

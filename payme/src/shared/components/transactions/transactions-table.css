@@ -1,0 +1,99 @@
+#transactions-table {
+    max-width: 90%;
+    margin: 2rem auto;
+}
+
+.transactions-card {
+    padding: 1.5rem;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.transactions-scroll {
+    max-height: 415px; 
+    overflow-y: auto; 
+    overflow-x: auto; 
+    border: 0px solid #ddd;
+    border-radius: 8px;
+}
+
+.transactions-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.transactions-table th,
+.transactions-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.transactions-table th {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    color: #515DEF;
+}
+
+.transactions-table td {
+    font-size: 0.95rem;
+    color: #333;
+}
+
+.transactions-table .negative-amount {
+    color: #FF6B6B;
+}
+
+.transactions-table .positive-amount {
+    color: #3FBF73;
+}
+
+
+@media (max-width: 768px) {
+    .transactions-scroll {
+        overflow-x: initial;
+    }
+
+    .transactions-table {
+        border: 0;
+    }
+
+    .transactions-table thead {
+        display: none;
+    }
+
+    .transactions-table tr {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+        border-bottom: 1px solid #ddd;
+        padding: 1rem;
+        border-radius: 8px;
+        background-color: #f9f9f9;
+    }
+
+    .transactions-table td {
+        display: flex;
+        justify-content: space-between;
+        padding: 0.5rem 0;
+        font-size: 0.85rem;
+        color: #555;
+    }
+
+    .transactions-table td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        color: #515DEF;
+        text-transform: uppercase;
+    }
+
+    .transactions-table .negative-amount {
+        color: #FF6B6B;
+    }
+
+    .transactions-table .positive-amount {
+        color: #3FBF73;
+    }
+}

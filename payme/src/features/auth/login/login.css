@@ -1,0 +1,69 @@
+#login {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100vh;
+
+}
+
+#logo {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 75px;
+}
+
+#login-form {
+    padding: 70px 40px;
+}
+
+
+.auth-background {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+
+}
+
+.auth-background img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+
+@media (width < 510px) {
+    #login-form {
+        padding: 20px 20px;
+    }
+
+    .inline-inputs {
+        display: block;
+        gap: 0px;
+    }
+}
+
+@media (width < 820px) {
+    .auth-background img {
+        display: none;
+    }
+
+    #login-form {
+        padding: 30px 40px;
+    }
+
+    .inline-inputs {
+        gap: 12px;
+    }
+
+    #login {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+}

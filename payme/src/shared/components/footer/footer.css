@@ -1,0 +1,39 @@
+.footer-page {
+    
+    background-color: #f8f9fa;
+    border-top: 2px solid #e9ecef;
+    width: 100%;
+    
+    text-align: center;
+    position: relative;
+    
+
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 14px;
+    margin: auto;
+    max-width: 80%;
+    max-height: 100%;
+    padding: 20px 20px;
+    align-items: center;
+}
+
+
+.footer{
+    text-align: right;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px;
+}
+
+
+@media (width < 600px){
+    .footer-container {
+        max-width: 100%;
+    }
+}

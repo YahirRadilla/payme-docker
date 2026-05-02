@@ -1,0 +1,34 @@
+.titles-content {
+    font-size: 24px;
+    color: #1C0C55;
+    font-weight: bold;
+}
+
+.form-style {
+    height: 100%;
+}
+
+@media (width < 960px) {
+    .titles-content {
+        font-size: 1.2em;
+    }
+}
+
+@media (width < 660px) {
+
+    .titles-content {
+        font-size: 1.2em;
+    }
+
+    .input-container {
+        margin: 20px 0px;
+    }
+
+    .inline-inputs {
+        display: block;
+        gap: 0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+}

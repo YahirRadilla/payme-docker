@@ -1,0 +1,70 @@
+.filter-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem auto;
+}
+.filter-input {
+    width: 600px;
+    display: flex;
+    gap: 1rem;
+}
+
+.filter-input input,
+.filter-input select {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #666;
+    background-color: #fff;
+    appearance: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.filter-input input[type="date"] {
+    padding: 0.75rem 1rem;
+    color: #333;
+}
+
+.filter-input input::placeholder {
+    color: #aaa;
+}
+
+.filter-input select {
+    color: #666;
+}
+
+.filter-button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #515DEF;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.filter-button:hover {
+    background-color: #3a42b8;
+}
+
+@media (max-width: 768px) {
+    .filter-container {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .filter-input {
+        width: 100%;
+    }
+
+    .filter-button {
+        width: 100%;
+    }
+}

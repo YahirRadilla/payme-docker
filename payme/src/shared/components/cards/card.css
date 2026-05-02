@@ -1,0 +1,82 @@
+.card {
+    width: 384px;
+    height: 215px;
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.foreground-empty {
+    width: 100%;
+    height: 100%;
+    background: #ffff;
+    padding: 16px;
+    padding-top: 30px;
+    color: white;
+}
+
+.foreground {
+
+    width: 100%;
+    height: 100%;
+    background: #121139;
+    padding: 16px;
+    color: white;
+}
+
+.credit-card-header {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.info-container {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.info-card {
+    display: flex;
+    justify-content: space-between;
+}
+
+.names {
+
+    font-size: 15px;
+}
+
+.expiration {
+    align-self: flex-end;
+    font-size: 15px;
+}
+
+.balance {
+    align-self: flex-end;
+    font-size: 15px;
+}
+
+.cvv {
+    align-self: flex-end;
+    font-size: 15px;
+}
+
+.balance {
+    align-self: flex-end;
+    font-size: 15px;
+}
+
+.serial {
+    align-self: center;
+    letter-spacing: 2px;
+    font-size: 24px;
+    font-family: monospace;
+}
+
+@media (width < 450px) {
+    .card {
+        width: 349px;
+
+    }
+}

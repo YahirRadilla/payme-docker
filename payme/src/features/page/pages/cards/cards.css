@@ -1,0 +1,41 @@
+#main-container {
+    padding-top: 32px;
+    max-width: 70%;
+    margin: auto;
+}
+
+#card-container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    width: 100%;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)) !important;
+}
+
+#card-form-services-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(487px, 1fr));
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+#card-form-container,
+#card-services-container {
+    border-radius: 10px;
+}
+
+@media (width < 600px) {
+    #main-container {
+        max-width: 90%;
+    }
+}
+
+
+@media (width < 600px) {
+    #card-form-services-container {
+        display: block;
+
+    }
+}

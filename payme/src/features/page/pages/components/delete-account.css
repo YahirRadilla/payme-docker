@@ -1,0 +1,39 @@
+.input-delete {
+    background-color: #FF6B6B;
+    color: #ffffff;
+    margin-top: 20px;
+    border: 1px solid #FFFFFF;
+    outline: none;
+    padding: 10px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    height: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, color 0.3s ease;
+}
+
+.input-delete:hover {
+    background-color: rgba(255, 107, 107, 0.1);
+    transform: scale(1.02);
+    color: #FF6B6B;
+}
+
+
+.container-forms {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+
+}
+
+.container-elements {}
+
+/* .warning-alert {
+    color: #00000;
+    opacity: 0.7;
+    font-size: 13px;
+    font-weight: 400px;
+    margin-top: 10px;
+} */

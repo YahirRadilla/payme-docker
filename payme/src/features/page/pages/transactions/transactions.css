@@ -1,0 +1,10 @@
+.transactions-content{
+    max-width: 70%;
+    margin: 2rem auto;
+}
+
+@media (max-width: 1281px) {
+    .transactions-content {
+        max-width: 90%;
+    }
+}
